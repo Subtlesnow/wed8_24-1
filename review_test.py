@@ -39,6 +39,9 @@ class TestReview(unittest.TestCase):
 		result = long_words(words, 4)
 		self.assertEqual(result, ["hello", "goodbye", "check"])
 
+		result = long_words(words, 6)
+		self.assertEqual(result, ["goodbye"])
+
 
 if __name__ == '__main__':
 	unittest.main()
